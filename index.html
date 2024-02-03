@@ -26,6 +26,18 @@
       <p class="text-start">
         The strategy is to use recursive functions to compare trees and check if one tree is a subtree of another. The areIdentical function is used to compare the actual content of two trees, and the isSubtree function utilizes it to find whether a subtree exists within a larger tree. The algorithm explores the tree structure in a depth-first manner, recursively checking nodes and their subtrees
       </p>
+
+      <form id="form">
+        <label for="rootInput">Root Tree:</label>
+        <input type="text" id="rootInput" placeholder="Enter root tree values" required>
+        <br>
+        <label for="subRootInput">Subtree:</label>
+        <input type="text" id="subRootInput" placeholder="Enter subtree values" required>
+        <br>
+        <button type="button" onclick="checkSubtree()">Check Subtree</button>
+      </form>
+
+      <div id="result"></div>
     </main>
 
     <footer class="footer footer-dark">
